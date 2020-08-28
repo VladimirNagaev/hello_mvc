@@ -1,6 +1,28 @@
 <component name="ArtifactManager">
   <artifact type="war" build-on-make="true" name="hello">
     <output-path>$PROJECT_DIR$/out/artifacts/hello</output-path>
-    <root id="archive" name="hello.war" />
+    <root id="archive" name="hello.war">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: javax.servlet:servlet-api:3.0-alpha-1" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.2.8.RELEASE" />
+        </element>
+        <element id="directory" name="classes">
+          <element id="module-output" name="hello_mvc" />
+        </element>
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-servlet.xml" />
+        <element id="directory" name="jsp">
+          <element id="dir-copy" path="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp" />
+        </element>
+      </element>
+    </root>
   </artifact>
 </component>
